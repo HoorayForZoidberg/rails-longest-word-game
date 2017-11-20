@@ -1,2 +1,3 @@
-<h1>Games#score</h1>
-<p>Find me in app/views/games/score.html.erb</p>
+<h1>Result</h1>
+<p><%= "#{@result_hash[:message]} Your score is: #{@result_hash[:score]}" %></p>
+<%= link_to "Start a new game", new_path %>

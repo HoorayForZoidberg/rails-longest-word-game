@@ -9,6 +9,8 @@
   <p>What is the longest word you can find?</p>
   <form action="/score" method="post">
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <%= hidden_field_tag :start_time, Time.now %>
+    <%= hidden_field_tag :grid, @letters %>
     <div class="input-group">
       <input type="text" class="form-control" name="word" placeholder="Your word">
       <span class="input-group-btn">
